@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="theme-color" content="#0f172a">
+    <title>Lịch Vạn Niên - Lịch Âm Dương</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="app-container">
+        <header>
+            <div class="header-content">
+                <h1 id="current-month-year">Tháng 01 - 2026</h1>
+                <div class="nav-buttons">
+                    <button id="prev-btn" class="nav-btn">&lt;</button>
+                    <button id="today-btn" class="nav-btn">Hôm nay</button>
+                    <button id="next-btn" class="nav-btn">&gt;</button>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <div class="calendar-wrapper">
+                <div class="calendar-grid">
+                    <div class="weekday">CN</div>
+                    <div class="weekday">T2</div>
+                    <div class="weekday">T3</div>
+                    <div class="weekday">T4</div>
+                    <div class="weekday">T5</div>
+                    <div class="weekday">T6</div>
+                    <div class="weekday">T7</div>
+                    <!-- Days will be injected here -->
+                    <div id="calendar-days" class="days-container"></div>
+                </div>
+            </div>
+
+            <aside class="details-panel">
+                <div class="day-card" id="selected-day-card">
+                    <div class="solar-date">
+                        <span id="detail-solar-day">17</span>
+                        <div class="solar-month-year">
+                            <span id="detail-solar-month">Tháng 1</span>
+                            <span id="detail-solar-year">2026</span>
+                        </div>
+                    </div>
+                    <div class="divider"></div>
+                    <div class="lunar-info" id="detail-lunar-date">
+                        <div class="lunar-main">
+                            <span class="lunar-day-label">Ngày</span>
+                            <span id="detail-lunar-day" class="lunar-big-day">29</span>
+                            <span id="detail-lunar-month-year" class="lunar-sub">Tháng 11, Ất Tỵ</span>
+                        </div>
+                        <div id="holiday-info" class="holiday-info" style="display: none;"></div>
+                    </div>
+                    <div class="canchi-info">
+                        <p>Ngày: <span id="detail-canchi-day">Mậu Tý</span></p>
+                        <p>Tháng: <span id="detail-canchi-month">Kỷ Sửu</span></p>
+                        <p>Giờ: <span id="detail-lucky-hours">Tý, Sửu, Mão, Ngọ, Thân, Dậu</span></p>
+                    </div>
+                    <div class="quotes">
+                        <p id="quote-text">"Ngọc bất trác bất thành khí, nhân bất học bất tri lý."</p>
+                    </div>
+                </div>
+            </aside>
+        </main>
+    </div>
+
+    <script src="lunar.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
