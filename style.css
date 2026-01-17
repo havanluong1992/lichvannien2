@@ -209,7 +209,7 @@ main {
 }
 
 #detail-solar-day {
-    font-size: 3.5rem;
+    font-size: 4.9rem;
     font-weight: 800;
     line-height: 1;
     background: linear-gradient(to bottom, #fff, #94a3b8);
@@ -221,7 +221,7 @@ main {
 .solar-month-year {
     display: flex;
     flex-direction: column;
-    font-size: 1.2rem;
+    font-size: 1.7rem;
     font-weight: 600;
 }
 
@@ -245,14 +245,14 @@ main {
 }
 
 .lunar-day-label {
-    font-size: 0.9rem;
+    font-size: 1.3rem;
     color: var(--text-secondary);
     text-transform: uppercase;
     letter-spacing: 0.1em;
 }
 
 .lunar-big-day {
-    font-size: 2rem;
+    font-size: 2.8rem;
     font-weight: 700;
     color: var(--sun-color);
 }
@@ -262,27 +262,28 @@ main {
 }
 
 .lunar-sub {
-    font-size: 1.1rem;
+    font-size: 1.5rem;
     color: var(--text-primary);
 }
 
 .holiday-info {
     margin-top: 12px;
-    padding: 8px 16px;
+    padding: 12px 24px;
     background: rgba(244, 63, 94, 0.15);
     border: 1px solid var(--accent-color);
     border-radius: 12px;
     color: var(--accent-color);
     font-weight: 600;
     text-align: center;
+    font-size: 0.85rem;
 }
 
 .canchi-info {
-    font-size: 0.95rem;
+    font-size: 1.3rem;
     color: var(--text-secondary);
     display: flex;
     flex-direction: column;
-    gap: 8px;
+    gap: 12px;
 }
 
 .canchi-info span {
