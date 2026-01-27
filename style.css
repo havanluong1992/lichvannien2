@@ -163,8 +163,9 @@ main {
     color: #f97316;
     font-weight: 600;
     align-self: flex-end;
-     margin-bottom: 15%;
-     margin-right: 15%;
+    margin-bottom: 15%;
+    margin-right: 15%;
+
 }
 
 .day-cell.today .lunar-num {
@@ -378,7 +379,7 @@ main {
     }
 
     .solar-num {
-        font-size: 1.5rem;
+        font-size: 1.1rem;
     }
 
     .lunar-num {
@@ -424,13 +425,4 @@ main {
         padding-left: env(safe-area-inset-left);
         padding-right: env(safe-area-inset-right);
     }
-
 }
-
-
-
-
-
-
-
-
