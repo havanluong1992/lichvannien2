@@ -163,6 +163,8 @@ main {
     color: #f97316;
     font-weight: 600;
     align-self: flex-end;
+     margin-bottom: 15%;
+     margin-right: 15%;
 }
 
 .day-cell.today .lunar-num {
@@ -424,6 +426,7 @@ main {
     }
 
 }
+
 
 
 
