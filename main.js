@@ -98,7 +98,9 @@ function renderCalendar(date) {
 
     daysContainer.innerHTML = '';
 
-    const firstDayOfMonth = new Date(year, month, 1).getDay();
+    let firstDayOfMonth = new Date(year, month, 1).getDay();
+    // Adjust for Monday start: Monday (1) -> 0, ..., Sunday (0) -> 6
+    firstDayOfMonth = (firstDayOfMonth === 0 ? 7 : firstDayOfMonth) - 1;
     const daysInMonth = new Date(year, month + 1, 0).getDate();
 
     // Fill previous month days

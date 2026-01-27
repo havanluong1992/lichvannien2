@@ -31,8 +31,8 @@ body {
 .app-container {
     width: 80%;
     max-width: 800px;
-    height: 60vh;
-    height: 60dvh;
+    height: 50vh;
+    height: 50dvh;
     background: var(--glass-bg);
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
@@ -91,15 +91,16 @@ main {
 
 .calendar-wrapper {
     flex: 2;
-    padding: 20px;
+    padding: 5px;
+    overflow-x: hidden;
     overflow-y: auto;
 }
 
 .calendar-grid {
     display: grid;
-    grid-template-columns: repeat(7, 1fr);
-    gap: 10px;
-    max-width: 600px;
+    grid-template-columns: repeat(7, minmax(0, 1fr));
+    gap: 1px;
+    max-width: 100%;
     margin: 0 auto;
 }
 
@@ -119,14 +120,16 @@ main {
     aspect-ratio: 1/1;
     background: var(--glass-bg);
     border: 1px solid var(--glass-border);
-    border-radius: 12px;
-    padding: 5px;
+    border-radius: 8px;
+    padding: 1px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     cursor: pointer;
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     position: relative;
+    overflow: hidden;
+    min-width: 0;
 }
 
 .day-cell:hover {
@@ -150,13 +153,13 @@ main {
 }
 
 .solar-num {
-    font-size: 2.4rem;
+    font-size: 1.5rem;
     font-weight: 700;
     line-height: 1;
 }
 
 .lunar-num {
-    font-size: 2rem;
+    font-size: 1rem;
     color: #f97316;
     font-weight: 600;
     align-self: flex-end;
@@ -190,16 +193,17 @@ main {
 /* Details Panel */
 .details-panel {
     flex: 1;
-    padding: 24px;
+    padding: 16px;
     background: rgba(0, 0, 0, 0.2);
     border-left: 1px solid var(--glass-border);
+    overflow-y: auto;
 }
 
 .day-card {
     height: 100%;
     display: flex;
     flex-direction: column;
-    gap: 24px;
+    gap: 12px;
 }
 
 .solar-date {
@@ -209,7 +213,7 @@ main {
 }
 
 #detail-solar-day {
-    font-size: 4.9rem;
+    font-size: 3.5rem;
     font-weight: 800;
     line-height: 1;
     background: linear-gradient(to bottom, #fff, #94a3b8);
@@ -221,7 +225,7 @@ main {
 .solar-month-year {
     display: flex;
     flex-direction: column;
-    font-size: 1.7rem;
+    font-size: 1.4rem;
     font-weight: 600;
 }
 
@@ -232,7 +236,7 @@ main {
 }
 
 .lunar-info {
-    padding: 16px;
+    padding: 12px;
     background: var(--glass-bg);
     border-radius: 20px;
     border: 1px solid var(--glass-border);
@@ -245,14 +249,14 @@ main {
 }
 
 .lunar-day-label {
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     color: var(--text-secondary);
     text-transform: uppercase;
     letter-spacing: 0.1em;
 }
 
 .lunar-big-day {
-    font-size: 2.8rem;
+    font-size: 2rem;
     font-weight: 700;
     color: var(--sun-color);
 }
@@ -262,7 +266,7 @@ main {
 }
 
 .lunar-sub {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     color: var(--text-primary);
 }
 
@@ -279,7 +283,7 @@ main {
 }
 
 .canchi-info {
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     color: var(--text-secondary);
     display: flex;
     flex-direction: column;
@@ -292,11 +296,11 @@ main {
 }
 
 .quotes {
-    margin-top: auto;
+    margin-top: 30px;
     font-style: italic;
     color: var(--text-secondary);
     text-align: center;
-    padding: 20px;
+    padding: 10px;
     border-top: 1px solid var(--glass-border);
 }
 
@@ -334,7 +338,7 @@ main {
     }
 
     .calendar-wrapper {
-        padding: 16px;
+        padding: 8px;
         flex: none;
     }
 
@@ -342,7 +346,7 @@ main {
         flex: none;
         border-left: none;
         border-top: 1px solid var(--glass-border);
-        padding: 24px 16px;
+        padding: 16px;
     }
 
     .calendar-grid {
@@ -367,7 +371,7 @@ main {
 /* Specific adjustments for iPhone 16 Pro Max (and similar tall/wide mobile screens) */
 @media (max-width: 480px) {
     .day-cell {
-        padding: 5px 3px;
+        padding: 2px 1px;
         border-radius: 8px;
     }
 
