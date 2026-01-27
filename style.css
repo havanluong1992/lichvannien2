@@ -380,7 +380,7 @@ main {
     }
 
     .lunar-num {
-        font-size: 1.4rem;
+        font-size: 1.0rem;
     }
 
     .weekday {
@@ -424,5 +424,6 @@ main {
     }
 
 }
+
 
 
