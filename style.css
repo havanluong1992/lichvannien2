@@ -405,6 +405,7 @@ main {
 
     .holiday-label {
         font-size: 0.55rem;
+         margin-bottom: 15%;
     }
 
     .header-content {
@@ -427,3 +428,4 @@ main {
     }
 
 }
+
