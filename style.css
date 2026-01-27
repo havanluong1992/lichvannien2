@@ -378,11 +378,11 @@ main {
     }
 
     .solar-num {
-        font-size: 1.2rem;
+        font-size: 1.0rem;
     }
 
     .lunar-num {
-        font-size: 0.3rem;
+        font-size: 0.5rem;
     }
 
     .weekday {
@@ -426,6 +426,7 @@ main {
     }
 
 }
+
 
 
 
